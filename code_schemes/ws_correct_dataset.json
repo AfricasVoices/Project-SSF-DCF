@@ -61,9 +61,130 @@
         {
             "CodeID": "code-30d0e028",
             "CodeType": "Normal",
+            "DisplayText": "ssf elections s01e01",
+            "StringValue": "ssf_elections_s01e01",
+            "NumericValue": 99,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf elections s01e01"
+            ]
+        },
+        {
+            "CodeID": "code-70ad6746",
+            "CodeType": "Normal",
+            "DisplayText": "ssf elections s01e02",
+            "StringValue": "ssf_elections_s01e02",
+            "NumericValue": 100,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf elections s01e02"
+            ]
+        },
+        {
+            "CodeID": "code-08370f4e",
+            "CodeType": "Normal",
+            "DisplayText": "ssf elections s01e03",
+            "StringValue": "ssf_elections_s01e03",
+            "NumericValue": 101,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf elections s01e03"
+            ]
+        },
+        {
+            "CodeID": "code-3194113f",
+            "CodeType": "Normal",
+            "DisplayText": "ssf elections s01e04",
+            "StringValue": "ssf_elections_s01e04",
+            "NumericValue": 102,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf elections s01e04"
+            ]
+        },
+        {
+            "CodeID": "code-fd46c865",
+            "CodeType": "Normal",
+            "DisplayText": "ssf elections s01e05",
+            "StringValue": "ssf_elections_s01e05",
+            "NumericValue": 103,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf elections s01e05"
+            ]
+        },
+        {
+            "CodeID": "code-23bfc5e0",
+            "CodeType": "Normal",
+            "DisplayText": "ssf elections s01e06",
+            "StringValue": "ssf_elections_s01e06",
+            "NumericValue": 104,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf elections s01e06"
+            ]
+        },
+        {
+            "CodeID": "code-7396616c",
+            "CodeType": "Normal",
+            "DisplayText": "ssf elections s01e07",
+            "StringValue": "ssf_elections_s01e07",
+            "NumericValue": 105,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf elections s01e07"
+            ]
+        },
+        {
+            "CodeID": "code-30d0e028",
+            "CodeType": "Normal",
+            "DisplayText": "ssf rec s01e01",
+            "StringValue": "ssf_rec_s01e01",
+            "NumericValue": 106,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf rec s01e01"
+            ]
+        },
+        {
+            "CodeID": "code-70ad6746",
+            "CodeType": "Normal",
+            "DisplayText": "ssf rec s01e02",
+            "StringValue": "ssf_rec_s01e02",
+            "NumericValue": 107,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf rec s01e02"
+            ]
+        },
+        {
+            "CodeID": "code-08370f4e",
+            "CodeType": "Normal",
+            "DisplayText": "ssf rec s01e03",
+            "StringValue": "ssf_rec_s01e03",
+            "NumericValue": 108,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf rec s01e03"
+            ]
+        },
+        {
+            "CodeID": "code-3194113f",
+            "CodeType": "Normal",
+            "DisplayText": "ssf rec s01e04",
+            "StringValue": "ssf_rec_s01e04",
+            "NumericValue": 109,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf rec s01e04"
+            ]
+        },
+        {
+            "CodeID": "code-30d0e028",
+            "CodeType": "Normal",
             "DisplayText": "ssf dcf s01e01",
             "StringValue": "ssf_dcf_s01e01",
-            "NumericValue": 99,
+            "NumericValue": 110,
             "VisibleInCoda": true,
             "MatchValues": [
                 "ssf dcf s01e01"
@@ -74,7 +195,7 @@
             "CodeType": "Normal",
             "DisplayText": "ssf dcf s01e02",
             "StringValue": "ssf_dcf_s01e02",
-            "NumericValue": 100,
+            "NumericValue": 111,
             "VisibleInCoda": true,
             "MatchValues": [
                 "ssf dcf s01e02"
@@ -85,7 +206,7 @@
             "CodeType": "Normal",
             "DisplayText": "ssf dcf s01e03",
             "StringValue": "ssf_dcf_s01e03",
-            "NumericValue": 101,
+            "NumericValue": 112,
             "VisibleInCoda": true,
             "MatchValues": [
                 "ssf dcf s01e03"
@@ -96,7 +217,7 @@
             "CodeType": "Normal",
             "DisplayText": "ssf dcf s01e04",
             "StringValue": "ssf_dcf_s01e04",
-            "NumericValue": 102,
+            "NumericValue": 113,
             "VisibleInCoda": true,
             "MatchValues": [
                 "ssf dcf s01e04"
