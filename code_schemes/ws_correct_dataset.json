@@ -59,6 +59,50 @@
             ]
         },
         {
+            "CodeID": "code-1854b761",
+            "CodeType": "Normal",
+            "DisplayText": "ssf dcf s01e01",
+            "StringValue": "ssf_dcf_s01e01",
+            "NumericValue": 110,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf dcf s01e01"
+            ]
+        },
+        {
+            "CodeID": "code-96b47292",
+            "CodeType": "Normal",
+            "DisplayText": "ssf dcf s01e02",
+            "StringValue": "ssf_dcf_s01e02",
+            "NumericValue": 111,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf dcf s01e02"
+            ]
+        },
+        {
+            "CodeID": "code-3f1d5626",
+            "CodeType": "Normal",
+            "DisplayText": "ssf dcf s01e03",
+            "StringValue": "ssf_dcf_s01e03",
+            "NumericValue": 112,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf dcf s01e03"
+            ]
+        },
+        {
+            "CodeID": "code-8a5ed50b",
+            "CodeType": "Normal",
+            "DisplayText": "ssf dcf s01e04",
+            "StringValue": "ssf_dcf_s01e04",
+            "NumericValue": 113,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf dcf s01e04"
+            ]
+        },
+        {
             "CodeID": "code-30d0e028",
             "CodeType": "Normal",
             "DisplayText": "ssf elections s01e01",
