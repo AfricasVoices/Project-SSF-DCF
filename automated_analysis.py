@@ -207,7 +207,7 @@ if __name__ == "__main__":
                 "Participants": participants
             })
 
-    if pipeline_configuration.pipeline_name == "SSF-ELECTIONS-Facebook":
+    if pipeline_configuration.pipeline_name == "SSF-DCF-Facebook":
         # Only the total engagement counts make sense for now, so don't attempt to apply any of the other standard
         # analysis to the Facebook data.
         exit(0)
