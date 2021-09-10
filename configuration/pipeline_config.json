@@ -1,0 +1,127 @@
+{
+  "PipelineName": "SSF-DCF",
+  "RawDataSources": [
+    {
+      "SourceType": "RapidPro",
+      "Domain": "textit.in",
+      "TokenFileURL": "gs://avf-credentials/imaqal-text-it-token.txt",
+      "ContactsFileName": "ssf_rec_contacts",
+      "ActivationFlowNames": [],
+      "SurveyFlowNames": [
+        "imaqal_demog",
+        "imaqal_covid19_demog"
+      ],
+      "TestContactUUIDs": [
+        "fad44f22-235a-4821-9780-dfef09076fe1",
+        "3903ad8e-284e-48a0-881b-89c0b06b9334",
+        "45939459-e4d5-4ad6-8650-3e7134b9a035"
+      ]
+    },
+    {
+      "SourceType": "RapidPro",
+      "Domain": "textit.in",
+      "TokenFileURL": "gs://avf-credentials/SSF_DCF-SLD-Textit-Token.txt",
+      "ContactsFileName": "ssf_dcf_contacts",
+      "ActivationFlowNames": [
+      ],
+      "SurveyFlowNames": [
+        "ssf_dcf_demog"
+      ],
+      "TestContactUUIDs": [
+        "fad44f22-235a-4821-9780-dfef09076fe1",
+        "3903ad8e-284e-48a0-881b-89c0b06b9334",
+        "45939459-e4d5-4ad6-8650-3e7134b9a035",
+        "3439f8d6-c79f-4d4c-a22e-0b6cf2495b3f",
+        "9412e8f3-6399-45e0-865c-9f3302ac9fa0",
+        "059fd321-09ba-4ea1-9842-e5e34ad53eea",
+        "2e9b5808-9b83-4a8e-880d-414d0b7a4047",
+        "fe45ffb7-9c1e-411a-bc9b-a390555520f1"
+      ]
+    },
+    {
+      "SourceType": "RecoveryCSV",
+      "ActivationFlowURLs": []
+    }
+  ],
+  "UuidTable": {
+    "FirebaseCredentialsFileURL": "gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
+    "TableName": "IMAQAL",
+    "UuidPrefix": "avf-phone-uuid-"
+  },
+  "OperationsDashboard": {
+    "FirebaseCredentialsFileURL": "gs://avf-credentials/avf-dashboards-firebase-adminsdk-gvecb-ef772e79b6.json"
+  },
+  "TimestampRemappings": [
+  ],
+  "SourceKeyRemappings": [
+    {"SourceKey": "avf_phone_id", "PipelineKey": "uid"},
+
+    {"SourceKey": "Rqa_Dcf_S01E01 (Text) - ssf_dcf_s01e01_activation", "PipelineKey": "rqa_dcf_s01e01_raw", "IsActivationMessage": true},
+    {"SourceKey": "Rqa_Dcf_S01E01 (Run ID) - ssf_dcf_s01e01_activation", "PipelineKey": "rqa_dcf_s01e01_run_id"},
+    {"SourceKey": "Rqa_Dcf_S01E01 (Time) - ssf_dcf_s01e01_activation", "PipelineKey": "sent_on"},
+
+    {"SourceKey": "Rqa_Dcf_S01E02 (Text) - ssf_dcf_s01e02_activation", "PipelineKey": "rqa_dcf_s01e02_raw", "IsActivationMessage": true},
+    {"SourceKey": "Rqa_Dcf_S01E02 (Run ID) - ssf_dcf_s01e02_activation", "PipelineKey": "rqa_dcf_s01e02_run_id"},
+    {"SourceKey": "Rqa_Dcf_S01E02 (Time) - ssf_dcf_s01e02_activation", "PipelineKey": "sent_on"},
+
+    {"SourceKey": "Rqa_Dcf_S01E03 (Text) - ssf_dcf_s01e03_activation", "PipelineKey": "rqa_dcf_s01e03_raw", "IsActivationMessage": true},
+    {"SourceKey": "Rqa_Dcf_S01E03 (Run ID) - ssf_dcf_s01e03_activation", "PipelineKey": "rqa_dcf_s01e03_run_id"},
+    {"SourceKey": "Rqa_Dcf_S01E03 (Time) - ssf_dcf_s01e03_activation", "PipelineKey": "sent_on"},
+
+    {"SourceKey": "Rqa_Dcf_S01E04 (Text) - ssf_dcf_s01e04_activation", "PipelineKey": "rqa_dcf_s01e04_raw", "IsActivationMessage": true},
+    {"SourceKey": "Rqa_Dcf_S01E04 (Run ID) - ssf_dcf_s01e04_activation", "PipelineKey": "rqa_dcf_s01e04_run_id"},
+    {"SourceKey": "Rqa_Dcf_S01E04 (Time) - ssf_dcf_s01e04_activation", "PipelineKey": "sent_on"},
+
+    {"SourceKey": "Gender (Value) - imaqal_demog", "PipelineKey": "gender_raw"},
+    {"SourceKey": "Gender (Time) - imaqal_demog", "PipelineKey": "gender_time"},
+    {"SourceKey": "Age (Value) - imaqal_demog", "PipelineKey": "age_raw"},
+    {"SourceKey": "Age (Time) - imaqal_demog", "PipelineKey": "age_time"},
+    {"SourceKey": "Recently_Displaced (Value) - imaqal_demog", "PipelineKey": "recently_displaced_raw"},
+    {"SourceKey": "Recently_Displaced (Time) - imaqal_demog", "PipelineKey": "recently_displaced_time"},
+    {"SourceKey": "Household_Language (Value) - imaqal_demog", "PipelineKey": "household_language_raw"},
+    {"SourceKey": "Household_Language (Time) - imaqal_demog", "PipelineKey": "household_language_time"},
+    {"SourceKey": "District (Value) - imaqal_demog", "PipelineKey": "location_raw"},
+    {"SourceKey": "District (Time) - imaqal_demog", "PipelineKey": "location_time"},
+
+    {"SourceKey": "Gender (Value) - imaqal_covid19_demog", "PipelineKey": "gender_raw"},
+    {"SourceKey": "Gender (Time) - imaqal_covid19_demog", "PipelineKey": "gender_time"},
+    {"SourceKey": "Age (Value) - imaqal_covid19_demog", "PipelineKey": "age_raw"},
+    {"SourceKey": "Age (Time) - imaqal_covid19_demog", "PipelineKey": "age_time"},
+    {"SourceKey": "Recently_Displaced (Value) - imaqal_covid19_demog", "PipelineKey": "recently_displaced_raw"},
+    {"SourceKey": "Recently_Displaced (Time) - imaqal_covid19_demog", "PipelineKey": "recently_displaced_time"},
+    {"SourceKey": "Household_Language (Value) - imaqal_covid19_demog", "PipelineKey": "household_language_raw"},
+    {"SourceKey": "Household_Language (Time) - imaqal_covid19_demog", "PipelineKey": "household_language_time"},
+    {"SourceKey": "District (Value) - imaqal_covid19_demog", "PipelineKey": "location_raw"},
+    {"SourceKey": "District (Time) - imaqal_covid19_demog", "PipelineKey": "location_time"},
+
+    {"SourceKey": "Gender (Value) - ssf_dcf_demog", "PipelineKey": "gender_raw"},
+    {"SourceKey": "Gender (Time) - ssf_dcf_demog", "PipelineKey": "gender_time"},
+    {"SourceKey": "Age (Value) - ssf_dcf_demog", "PipelineKey": "age_raw"},
+    {"SourceKey": "Age (Time) - ssf_dcf_demog", "PipelineKey": "age_time"},
+    {"SourceKey": "Recently_Displaced (Value) - ssf_dcf_demog", "PipelineKey": "recently_displaced_raw"},
+    {"SourceKey": "Recently_Displaced (Time) - ssf_dcf_demog", "PipelineKey": "recently_displaced_time"},
+    {"SourceKey": "Household_Language (Value) - ssf_dcf_demog", "PipelineKey": "household_language_raw"},
+    {"SourceKey": "Household_Language (Time) - ssf_dcf_demog", "PipelineKey": "household_language_time"},
+    {"SourceKey": "District (Value) - ssf_dcf_demog", "PipelineKey": "location_raw"},
+    {"SourceKey": "District (Time) - ssf_dcf_demog", "PipelineKey": "location_time"}
+  ],
+  "ProjectStartDate": "2021-09-10T08:00:00+03:00",
+  "ProjectEndDate": "2100-01-01T00:00:00+03:00",
+  "FilterTestMessages": false,
+  "MoveWSMessages": true,
+  "AutomatedAnalysis": {
+    "GenerateRegionThemeDistributionMaps": true,
+    "GenerateDistrictThemeDistributionMaps": true,
+    "GenerateMogadishuThemeDistributionMaps": true
+  },
+  "DriveUpload": {
+    "DriveCredentialsFileURL": "gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
+    "ProductionUploadPath": "ssf_dcf_analysis_outputs/production.csv",
+    "MessagesUploadPath": "ssf_dcf_analysis_outputs/messages.csv",
+    "IndividualsUploadPath": "ssf_dcf_analysis_outputs/individuals.csv",
+    "AutomatedAnalysisDir": "ssf_dcf_analysis_outputs/automated_analysis"
+  },
+  "MemoryProfileUploadBucket":"gs://avf-pipeline-logs-performance-nearline",
+  "DataArchiveUploadBucket": "gs://pipeline-execution-backup-archive",
+  "BucketDirPath": "2021/SSF-DCF/"
+}
