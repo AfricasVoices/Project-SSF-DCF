@@ -23,6 +23,10 @@
       "TokenFileURL": "gs://avf-credentials/SSF_DCF-SLD-Textit-Token.txt",
       "ContactsFileName": "ssf_dcf_contacts",
       "ActivationFlowNames": [
+        "ssf_dcf_s01e01_activation",
+        "ssf_dcf_s01e02_activation",
+        "ssf_dcf_s01e03_activation",
+        "ssf_dcf_s01e04_activation"
       ],
       "SurveyFlowNames": [
         "ssf_dcf_demog"
