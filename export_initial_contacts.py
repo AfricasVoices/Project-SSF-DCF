@@ -6,11 +6,9 @@ import sys
 from core_data_modules.cleaners import Codes
 from core_data_modules.cleaners.codes import SomaliaCodes
 from core_data_modules.logging import Logger
-from core_data_modules.traced_data.io import TracedDataJsonIO
 from id_infrastructure.firestore_uuid_table import FirestoreUuidTable
 from storage.google_cloud import google_cloud_utils
 
-from configuration.code_schemes import CodeSchemes
 from src.lib import PipelineConfiguration
 
 log = Logger(__name__)
@@ -18,7 +16,7 @@ log = Logger(__name__)
 TARGET_LOCATIONS = {SomaliaCodes.GALMUDUG, SomaliaCodes.SOUTH_WEST_STATE}
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Generates lists of phone numbers of previous CSAP respondents who  "
+    parser = argparse.ArgumentParser(description="Generates lists of phone numbers of previous IMAQAL respondents who  "
                                                  "were labelled as living in one of the target locations")
 
     parser.add_argument("google_cloud_credentials_file_path", metavar="google-cloud-credentials-file-path",
@@ -26,8 +24,8 @@ if __name__ == "__main__":
                              "credentials bucket")
     parser.add_argument("pipeline_configuration_file_path", metavar="pipeline-configuration-file",
                         help="Path to the pipeline configuration json file")
-    parser.add_argument("traced_data_paths", metavar="traced-data-paths", nargs="+",
-                        help="Paths to the traced data files (either messages or individuals) to extract phone "
+    parser.add_argument("csv_input_file_path", metavar="csv-input-file-path", nargs="+",
+                        help="Paths to csv files (either messages or individuals analysis) to extract phone "
                              "numbers from")
     parser.add_argument("csv_output_file_path", metavar="csv-output-file-path",
                         help="Path to a CSV file to write the contacts from the locations of interest to. "
@@ -39,7 +37,7 @@ if __name__ == "__main__":
 
     google_cloud_credentials_file_path = args.google_cloud_credentials_file_path
     pipeline_configuration_file_path = args.pipeline_configuration_file_path
-    traced_data_paths = args.traced_data_paths
+    csv_input_file_path = args.csv_input_file_path
     csv_output_file_path = args.csv_output_file_path
 
     log.info("Loading Pipeline Configuration File...")
@@ -63,29 +61,33 @@ if __name__ == "__main__":
 
     uuids = set()
     location_counts = {location: 0 for location in TARGET_LOCATIONS}
-    for path in traced_data_paths:
-        # Load the traced data
-        log.info(f"Loading previous traced data from file '{path}'...")
-        with open(path) as f:
-            data = TracedDataJsonIO.import_jsonl_to_traced_data_iterable(f)
-        log.info(f"Loaded {len(data)} traced data objects")
+    for path in csv_input_file_path:
+        # Load the data
+        log.info(f"Loading previous csv data from file '{path}'...")
+        with open(path, mode="r") as csv_file:
+            csv_reader = csv.DictReader(csv_file)
+            data = [row for row in csv_reader]
+        log.info(f"Loaded {len(data)} rows")
 
-        # Search the TracedData for contacts from one of the relevant locations
+        # Search the data for contacts from one of the relevant locations
         log.info(f"Searching for participants from the target locations ({TARGET_LOCATIONS})...")
         file_uuids = set()
         file_location_counts = {location: 0 for location in TARGET_LOCATIONS}
-        for td in data:
-            if td["state_coded"] == Codes.STOP:
+        for row in data:
+            if row["state"] == Codes.STOP:
                 continue
 
-            location = CodeSchemes.SOMALIA_STATE.get_code_with_code_id(td["state_coded"]["CodeID"]).string_value
+            location = row["state"]
             if location in TARGET_LOCATIONS:
-                if td["uid"] not in file_uuids:
+                if "uid" not in row:
+                    continue
+                if row["uid"] not in file_uuids:
                     file_location_counts[location] += 1
-                    file_uuids.add(td["uid"])
-                if td["uid"] not in uuids:
+                    file_uuids.add(row["uid"])
+                if row["uid"] not in uuids:
                     location_counts[location] += 1
-                    uuids.add(td["uid"])
+                    uuids.add(row["uid"])
+        
         log.info(f"Found {len(file_uuids)} contacts in the target locations "
                  f"(per-location counts: {file_location_counts})")
         log.info(f"Running total: {len(uuids)} (per-location counts: {location_counts})")
