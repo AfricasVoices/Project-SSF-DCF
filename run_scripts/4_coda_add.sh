@@ -15,6 +15,11 @@ DATA_ROOT=$3
 ./checkout_coda_v2.sh "$CODA_V2_ROOT"
 
 DATASETS=(
+    "SSF_DCF_s01e01"
+    "SSF_DCF_s01e02"
+    "SSF_DCF_s01e03"
+    "SSF_DCF_s01e04"
+
     "IMAQAL_gender"
     "IMAQAL_location"
     "IMAQAL_age"
