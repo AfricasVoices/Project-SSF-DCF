@@ -39,7 +39,7 @@
       "CodeID": "code-9fba9312",
       "CodeType": "Normal",
       "DisplayText": "should be representative",
-      "NumericValue": 9,
+      "NumericValue": 5,
       "StringValue": "should_be_representative",
       "VisibleInCoda": true
     },
@@ -47,7 +47,7 @@
       "CodeID": "code-bafd5d8a",
       "CodeType": "Normal",
       "DisplayText": "questions",
-      "NumericValue": 9,
+      "NumericValue": 6,
       "StringValue": "questions",
       "VisibleInCoda": true
     },
@@ -55,7 +55,7 @@
       "CodeID": "code-a63cec7b",
       "CodeType": "Normal",
       "DisplayText": "other theme",
-      "NumericValue": 9,
+      "NumericValue": 7,
       "StringValue": "other_theme",
       "VisibleInCoda": true
     },
