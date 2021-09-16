@@ -122,8 +122,8 @@ class AnalysisFile(object):
             user, to_be_folded, lambda td: td["uid"], fold_strategies
         )
 
-        ConsentUtils.set_stopped(user, data, consent_withdrawn_key)
-        ConsentUtils.set_stopped(user, folded_data, consent_withdrawn_key)
+        #ConsentUtils.set_stopped(user, data, consent_withdrawn_key)
+        #ConsentUtils.set_stopped(user, folded_data, consent_withdrawn_key)
 
         # Add 'sent_on' as the second column in the messages file
         messages_export_keys = export_keys.copy()

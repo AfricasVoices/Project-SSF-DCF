@@ -36,7 +36,7 @@ echo "Starting run with id '$RUN_ID'"
 
 ./3_generate_outputs.sh --profile-memory "$PERFORMANCE_LOGS_DIR/memory-$RUN_ID.profile" \
     "$USER" "$PIPELINE_RUN_MODE" "$PIPELINE_CONFIGURATION" "$DATA_ROOT"
-
+exit
 ./4_coda_add.sh "$CODA_PUSH_CREDENTIALS_PATH" "$CODA_TOOLS_ROOT" "$DATA_ROOT"
 
 if [[ $PIPELINE_RUN_MODE == "all-stages" ]]; then
