@@ -103,13 +103,13 @@ if __name__ == "__main__":
     #         f
     #     )
 
-    log.info("Computing repeat participations...")
-    with open(f"{automated_analysis_output_dir}/repeat_participations.csv", "w") as f:
-        repeat_participations.export_repeat_participations_csv(
-            individuals, CONSENT_WITHDRAWN_KEY,
-            coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS),
-            f
-        )
+    # log.info("Computing repeat participations...")
+    # with open(f"{automated_analysis_output_dir}/repeat_participations.csv", "w") as f:
+    #     repeat_participations.export_repeat_participations_csv(
+    #         individuals, CONSENT_WITHDRAWN_KEY,
+    #         coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS),
+    #         f
+    #     )
 
     log.info("Computing theme distributions...")
     with open(f"{automated_analysis_output_dir}/theme_distributions.csv", "w") as f:
