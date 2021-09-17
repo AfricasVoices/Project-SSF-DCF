@@ -95,13 +95,13 @@ if __name__ == "__main__":
                 )
         return analysis_configurations
 
-    log.info("Computing engagement counts...")
-    with open(f"{automated_analysis_output_dir}/engagement_counts.csv", "w") as f:
-        engagement_counts.export_engagement_counts_csv(
-            messages, individuals, CONSENT_WITHDRAWN_KEY,
-            coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS),
-            f
-        )
+    # log.info("Computing engagement counts...")
+    # with open(f"{automated_analysis_output_dir}/engagement_counts.csv", "w") as f:
+    #     engagement_counts.export_engagement_counts_csv(
+    #         messages, individuals, CONSENT_WITHDRAWN_KEY,
+    #         coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS),
+    #         f
+    #     )
 
     log.info("Computing repeat participations...")
     with open(f"{automated_analysis_output_dir}/repeat_participations.csv", "w") as f:
