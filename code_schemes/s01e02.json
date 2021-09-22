@@ -3,7 +3,78 @@
   "Name": "RQA S01E02",
   "Version": "0.0.0.1",
   "Codes": [
-
+    {
+      "CodeID": "code-14e3cc6d",
+      "CodeType": "Normal",
+      "DisplayText": "yes, there are opportunities",
+      "NumericValue": 1,
+      "StringValue": "yes_there_are_opportunities",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ca9fbddf",
+      "CodeType": "Normal",
+      "DisplayText": "yes, if they are involved",
+      "NumericValue": 2,
+      "StringValue": "yes_if_they_are_involved",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4bc3fc82",
+      "CodeType": "Normal",
+      "DisplayText": "yes, if they cooperate",
+      "NumericValue": 3,
+      "StringValue": "yes_if_they_cooperate",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-918334b8",
+      "CodeType": "Normal",
+      "DisplayText": "yes, they represent the community",
+      "NumericValue": 4,
+      "StringValue": "yes_they_represent_the_community",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4f912cfe",
+      "CodeType": "Normal",
+      "DisplayText": "no, they are not included",
+      "NumericValue": 5,
+      "StringValue": "no_they_are_not_included",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-8985f9a4",
+      "CodeType": "Normal",
+      "DisplayText": "no, insecurity",
+      "NumericValue": 6,
+      "StringValue": "no_insecurity",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-03f902ca",
+      "CodeType": "Normal",
+      "DisplayText": "yes, no reason",
+      "NumericValue": 7,
+      "StringValue": "yes_no_reason",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-637bbe86",
+      "CodeType": "Normal",
+      "DisplayText": "no, no reason",
+      "NumericValue": 8,
+      "StringValue": "no_no_reason",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4d5b52ce",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 9,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
