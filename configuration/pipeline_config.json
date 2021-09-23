@@ -116,7 +116,16 @@
   "AutomatedAnalysis": {
     "GenerateRegionThemeDistributionMaps": true,
     "GenerateDistrictThemeDistributionMaps": true,
-    "GenerateMogadishuThemeDistributionMaps": true
+    "GenerateMogadishuThemeDistributionMaps": true,
+    "TrafficLabels": [
+      {"StartDate": "2021-09-10T12:08+03:00", "EndDate": "2021-09-12T24:00+03:00", "Label": "E01 Promo"},
+      {"StartDate": "2021-09-12T16:30+03:00", "EndDate": "2021-09-12T24:00+03:00", "Label": "E01 Ad"},
+      {"StartDate": "2021-09-13T08:00+03:00", "EndDate": "2021-09-12T24:00+03:00", "Label": "E01 Radio"},
+
+      {"StartDate": "2021-09-17T08:00+03:00", "EndDate": "2021-09-19T24:00+03:00", "Label": "E02 Promo"},
+      {"StartDate": "2021-09-18T10:30+03:00", "EndDate": "2021-09-18T24:00+03:00", "Label": "E02 Ad"},
+      {"StartDate": "2021-09-20T08:00+03:00", "EndDate": "2021-09-20T24:00+03:00", "Label": "E02 Radio"}
+    ]
   },
   "DriveUpload": {
     "DriveCredentialsFileURL": "gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
