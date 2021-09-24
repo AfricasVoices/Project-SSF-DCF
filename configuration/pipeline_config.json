@@ -5,7 +5,7 @@
       "SourceType": "RapidPro",
       "Domain": "textit.in",
       "TokenFileURL": "gs://avf-credentials/imaqal-text-it-token.txt",
-      "ContactsFileName": "ssf_rec_contacts",
+      "ContactsFileName": "ssf_dcf_contacts",
       "ActivationFlowNames": [],
       "SurveyFlowNames": [
         "imaqal_demog",
