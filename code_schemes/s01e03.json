@@ -3,7 +3,62 @@
   "Name": "RQA S01E03",
   "Version": "0.0.0.1",
   "Codes": [
-
+    {
+      "CodeID": "code-11ba0b90",
+      "CodeType": "Normal",
+      "DisplayText": "important role",
+      "NumericValue": 1,
+      "StringValue": "important_role",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-40c51678",
+      "CodeType": "Normal",
+      "DisplayText": "backbone of the society",
+      "NumericValue": 2,
+      "StringValue": "backbone_of_the_society",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4a11fc4e",
+      "CodeType": "Normal",
+      "DisplayText": "governance stakeholders",
+      "NumericValue": 3,
+      "StringValue": "governance_stakeholders",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1a2092d7",
+      "CodeType": "Normal",
+      "DisplayText": "uphold justice",
+      "NumericValue": 4,
+      "StringValue": "uphold_justice",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-08b3c22b",
+      "CodeType": "Normal",
+      "DisplayText": "are corrupt",
+      "NumericValue": 5,
+      "StringValue": "are_corrupt",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-40ba119b",
+      "CodeType": "Normal",
+      "DisplayText": "no role",
+      "NumericValue": 6,
+      "StringValue": "no_role",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-45804f2c",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 7,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
