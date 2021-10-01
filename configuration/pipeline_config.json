@@ -44,7 +44,9 @@
     },
     {
       "SourceType": "RecoveryCSV",
-      "ActivationFlowURLs": []
+      "ActivationFlowURLs": [
+        "gs://avf-project-datasets/2021/SSF-DCF/2021_SSF_DCF_recovered_golis_s01e01_de_identified.csv"
+      ]
     }
   ],
   "UuidTable": {
@@ -56,6 +58,12 @@
     "FirebaseCredentialsFileURL": "gs://avf-credentials/avf-dashboards-firebase-adminsdk-gvecb-ef772e79b6.json"
   },
   "TimestampRemappings": [
+    {
+      "TimeKey": "received_on",
+      "ShowPipelineKeyToRemapTo": "rqa_s01e01_raw",
+      "RangeStartInclusive": "2021-09-14T00:00:00+03:00",
+      "RangeEndExclusive": "2021-09-17T24:00:00+03:00"
+    }
   ],
   "SourceKeyRemappings": [
     {"SourceKey": "avf_phone_id", "PipelineKey": "uid"},
@@ -75,6 +83,10 @@
     {"SourceKey": "Rqa_Dcf_S01E04 (Text) - ssf_dcf_s01e04_activation", "PipelineKey": "rqa_dcf_s01e04_raw", "IsActivationMessage": true},
     {"SourceKey": "Rqa_Dcf_S01E04 (Run ID) - ssf_dcf_s01e04_activation", "PipelineKey": "rqa_dcf_s01e04_run_id"},
     {"SourceKey": "Rqa_Dcf_S01E04 (Time) - ssf_dcf_s01e04_activation", "PipelineKey": "sent_on"},
+
+    {"SourceKey": "message", "PipelineKey": "recovered_raw", "IsActivationMessage": true},
+    {"SourceKey": "received_on", "PipelineKey": "sent_on"},
+    {"SourceKey": "run_id", "PipelineKey": "recovered_run_id"},
 
     {"SourceKey": "Gender (Value) - imaqal_demog", "PipelineKey": "gender_raw"},
     {"SourceKey": "Gender (Time) - imaqal_demog", "PipelineKey": "gender_time"},

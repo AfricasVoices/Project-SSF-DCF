@@ -180,7 +180,8 @@ def fetch_from_recovery_csv(user, google_cloud_credentials_file_path, raw_data_d
                 "avf_phone_id": row["Sender"],
                 "message": row["Message"],
                 "received_on": localized_date.isoformat(),
-                "run_id": SHAUtils.sha_dict(row)
+                "run_id": SHAUtils.sha_dict(row),
+                "urn_type": "tel"
             }
 
             traced_runs.append(
