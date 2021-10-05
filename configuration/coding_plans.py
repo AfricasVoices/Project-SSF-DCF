@@ -29,7 +29,9 @@ def clean_district_if_no_mogadishu_sub_district(text):
 
 def get_rqa_coding_plans(pipeline_name):
     return [
-        CodingPlan(raw_field="rqa_dcf_s01e01_raw",
+        CodingPlan(
+                   dataset_name="dcf_s01e01"
+                   raw_field="rqa_dcf_s01e01_raw",
                    time_field="sent_on",
                    run_id_field="rqa_dcf_s01e01_run_id",
                    coda_filename="SSF_DCF_s01e01.json",
@@ -46,7 +48,9 @@ def get_rqa_coding_plans(pipeline_name):
                    ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value("ssf dcf s01e01"),
                    raw_field_fold_strategy=FoldStrategies.concatenate),
 
-        CodingPlan(raw_field="rqa_dcf_s01e02_raw",
+        CodingPlan(
+                   dataset_name="dcf_s01e02"
+                   raw_field="rqa_dcf_s01e02_raw",
                    time_field="sent_on",
                    run_id_field="rqa_dcf_s01e02_run_id",
                    coda_filename="SSF_DCF_s01e02.json",
@@ -63,7 +67,9 @@ def get_rqa_coding_plans(pipeline_name):
                    ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value("ssf dcf s01e02"),
                    raw_field_fold_strategy=FoldStrategies.concatenate),
 
-        CodingPlan(raw_field="rqa_dcf_s01e03_raw",
+        CodingPlan(
+                   dataset_name="dcf_s01e03"
+                   raw_field="rqa_dcf_s01e03_raw",
                    time_field="sent_on",
                    run_id_field="rqa_dcf_s01e03_run_id",
                    coda_filename="SSF_DCF_s01e03.json",
@@ -80,7 +86,9 @@ def get_rqa_coding_plans(pipeline_name):
                    ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value("ssf dcf s01e03"),
                    raw_field_fold_strategy=FoldStrategies.concatenate),
 
-        CodingPlan(raw_field="rqa_dcf_s01e04_raw",
+        CodingPlan(
+                   dataset_name="dcf_s01e04"
+                   raw_field="rqa_dcf_s01e04_raw",
                    time_field="sent_on",
                    run_id_field="rqa_dcf_s01e04_run_id",
                    coda_filename="SSF_DCF_s01e04.json",
