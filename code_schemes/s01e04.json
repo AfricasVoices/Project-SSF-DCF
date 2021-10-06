@@ -3,7 +3,78 @@
   "Name": "RQA S01E04",
   "Version": "0.0.0.1",
   "Codes": [
-
+    {
+      "CodeID": "code-bd27b39d",
+      "CodeType": "Normal",
+      "DisplayText": "road maintenance",
+      "NumericValue": 1,
+      "StringValue": "road_maintenance",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-d151429a",
+      "CodeType": "Normal",
+      "DisplayText": "provide education",
+      "NumericValue": 2,
+      "StringValue": "provide_education",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-253ec026",
+      "CodeType": "Normal",
+      "DisplayText": "provide security and stability",
+      "NumericValue": 3,
+      "StringValue": "provide_security_and_stability",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-086cd2cf",
+      "CodeType": "Normal",
+      "DisplayText": "job creation",
+      "NumericValue": 4,
+      "StringValue": "job_creation",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-27bbb987",
+      "CodeType": "Normal",
+      "DisplayText": "provide health services",
+      "NumericValue": 5,
+      "StringValue": "provide_health_services",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1e266f9f",
+      "CodeType": "Normal",
+      "DisplayText": "cooperate with the people",
+      "NumericValue": 6,
+      "StringValue": "cooperate_with_the_people",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-bd607c2a",
+      "CodeType": "Normal",
+      "DisplayText": "advocate for the rights of people",
+      "NumericValue": 7,
+      "StringValue": "advocate_for_the_rights_of_people",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-58443ac3",
+      "CodeType": "Normal",
+      "DisplayText": "general services",
+      "NumericValue": 8,
+      "StringValue": "general_services",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4e12234d",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 9,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
