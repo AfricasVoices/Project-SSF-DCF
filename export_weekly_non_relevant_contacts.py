@@ -26,7 +26,7 @@ if __name__ == "__main__":
     parser.add_argument("pipeline_configuration_file_path", metavar="pipeline-configuration-file",
                         help="Path to the pipeline configuration json file")
     parser.add_argument("target_dataset_name", metavar="target-dataset-name",
-                        help="List of target dataset name to check for message relevance from")
+                        help="Target dataset name to check for message relevance from")
     parser.add_argument("traced_data_paths", metavar="traced-data-paths", nargs="+",
                         help="Paths to the traced data files (either messages or individuals) to extract phone "
                              "numbers from")
