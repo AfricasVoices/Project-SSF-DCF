@@ -49,13 +49,13 @@ def make_standard_rqa_coding_plan(dataset_name, episode_name, code_scheme, ws_ma
 def get_rqa_coding_plans(pipeline_name):
     if pipeline_name == "SSF-DCF":
         return [make_standard_rqa_coding_plan(episode_name="rqa_dcf_s01e01", code_scheme=CodeSchemes.S01E01,
-                                              ws_match_value="ssf dcf s01e01", coda_filename="SSF_DCF_s01e01")
+                                              ws_match_value="ssf dcf s01e01", coda_filename="SSF_DCF_s01e01"),
 
                 make_standard_rqa_coding_plan(episode_name="rqa_dcf_s01e02", code_scheme=CodeSchemes.S01E02,
-                                              ws_match_value="ssf dcf s01e02", coda_filename="SSF_DCF_s01e02")
+                                              ws_match_value="ssf dcf s01e02", coda_filename="SSF_DCF_s01e02"),
 
                 make_standard_rqa_coding_plan(episode_name="rqa_dcf_s01e03", code_scheme=CodeSchemes.S01E03,
-                                              ws_match_value="ssf dcf s01e03", coda_filename="SSF_DCF_s01e03")
+                                              ws_match_value="ssf dcf s01e03", coda_filename="SSF_DCF_s01e03"),
 
                 make_standard_rqa_coding_plan(episode_name="rqa_dcf_s01e04", code_scheme=CodeSchemes.S01E04,
                                               ws_match_value="ssf dcf s01e04", coda_filename="SSF_DCF_s01e04")]
