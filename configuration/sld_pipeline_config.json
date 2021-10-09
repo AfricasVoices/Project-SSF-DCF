@@ -56,6 +56,10 @@
   "SourceKeyRemappings": [
     {"SourceKey": "avf_phone_id", "PipelineKey": "uid"},
 
+    {"SourceKey": "Rqa_Sld_S01E01 (Text) - ssf_sld_s01e01_activation", "PipelineKey": "rqa_sld_s01e01_raw", "IsActivationMessage": true},
+    {"SourceKey": "Rqa_Sld_S01E01 (Run ID) - ssf_sld_s01e01_activation", "PipelineKey": "rqa_sld_s01e01_run_id"},
+    {"SourceKey": "Rqa_Sld_S01E01 (Time) - ssf_sld_s01e01_activation", "PipelineKey": "sent_on"},
+
     {"SourceKey": "Gender (Value) - imaqal_demog", "PipelineKey": "gender_raw"},
     {"SourceKey": "Gender (Time) - imaqal_demog", "PipelineKey": "gender_time"},
     {"SourceKey": "Age (Value) - imaqal_demog", "PipelineKey": "age_raw"},
