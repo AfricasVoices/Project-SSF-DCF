@@ -42,7 +42,7 @@ def make_standard_rqa_coding_plan(episode_name, code_scheme, ws_match_value, cod
                                 analysis_file_key=f"{episode_name}",
                                 fold_strategy=lambda x, y: FoldStrategies.list_of_labels(code_scheme, x, y)
                           )],
-                      ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value(ws_match_value),
+                      ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value(ws_match_value),
                       raw_field_fold_strategy=FoldStrategies.concatenate)
 
 
