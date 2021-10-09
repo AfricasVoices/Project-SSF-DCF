@@ -24,7 +24,9 @@
       "ContactsFileName": "ssf_sld_contacts",
       "ActivationFlowNames": [
       ],
-      "SurveyFlowNames": [],
+      "SurveyFlowNames": [
+        "ssf_sld_demog"
+      ],
       "TestContactUUIDs": [
         "fad44f22-235a-4821-9780-dfef09076fe1",
         "3903ad8e-284e-48a0-881b-89c0b06b9334",
@@ -80,7 +82,18 @@
     {"SourceKey": "Household_Language (Value) - imaqal_covid19_demog", "PipelineKey": "household_language_raw"},
     {"SourceKey": "Household_Language (Time) - imaqal_covid19_demog", "PipelineKey": "household_language_time"},
     {"SourceKey": "District (Value) - imaqal_covid19_demog", "PipelineKey": "location_raw"},
-    {"SourceKey": "District (Time) - imaqal_covid19_demog", "PipelineKey": "location_time"}
+    {"SourceKey": "District (Time) - imaqal_covid19_demog", "PipelineKey": "location_time"},
+
+    {"SourceKey": "Gender (Value) - ssf_sld_demog", "PipelineKey": "gender_raw"},
+    {"SourceKey": "Gender (Time) - ssf_sld_demog", "PipelineKey": "gender_time"},
+    {"SourceKey": "Age (Value) - ssf_sld_demog", "PipelineKey": "age_raw"},
+    {"SourceKey": "Age (Time) - ssf_sld_demog", "PipelineKey": "age_time"},
+    {"SourceKey": "Recently Displaced (Value) - ssf_sld_demog", "PipelineKey": "recently_displaced_raw"},
+    {"SourceKey": "Recently Displaced (Time) - ssf_sld_demog", "PipelineKey": "recently_displaced_time"},
+    {"SourceKey": "Household Language (Value) - ssf_sld_demog", "PipelineKey": "household_language_raw"},
+    {"SourceKey": "Household Language (Time) - ssf_sld_demog", "PipelineKey": "household_language_time"},
+    {"SourceKey": "District (Value) - ssf_sld_demog", "PipelineKey": "location_raw"},
+    {"SourceKey": "District (Time) - ssf_sld_demog", "PipelineKey": "location_time"}
   ],
   "ProjectStartDate": "2021-10-12T08:00:00+03:00",
   "ProjectEndDate": "2100-01-01T00:00:00+03:00",
