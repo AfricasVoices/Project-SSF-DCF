@@ -51,14 +51,7 @@
   "OperationsDashboard": {
     "FirebaseCredentialsFileURL": "gs://avf-credentials/avf-dashboards-firebase-adminsdk-gvecb-ef772e79b6.json"
   },
-  "TimestampRemappings": [
-    {
-      "TimeKey": "received_on",
-      "ShowPipelineKeyToRemapTo": "rqa_s01e01_raw",
-      "RangeStartInclusive": "2021-09-14T00:00:00+03:00",
-      "RangeEndExclusive": "2021-09-17T24:00:00+03:00"
-    }
-  ],
+  "TimestampRemappings": [],
   "SourceKeyRemappings": [
     {"SourceKey": "avf_phone_id", "PipelineKey": "uid"},
 
