@@ -27,7 +27,7 @@ def clean_district_if_no_mogadishu_sub_district(text):
         return Codes.NOT_CODED
 
 
-def make_standard_rqa_coding_plan(episode_name, code_scheme, ws_match_value, coda_filename):
+def make_rqa_coding_plan(episode_name, code_scheme, ws_match_value, coda_filename):
     return CodingPlan(dataset_name=episode_name.replace("rqa_", ""),
                       raw_field=f"{episode_name}_raw",
                       time_field="sent_on",
