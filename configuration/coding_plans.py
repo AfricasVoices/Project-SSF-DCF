@@ -61,7 +61,8 @@ def get_rqa_coding_plans(pipeline_name):
                                               ws_match_value="ssf dcf s01e04", coda_filename="SSF_DCF_s01e04")]
     else:
         assert pipeline_name == "SSF-SLD"
-        return []
+        return [make_standard_rqa_coding_plan(episode_name="rqa_sld_s01e01", code_scheme=CodeSchemes.S01E01,
+                                              ws_match_value="ssf sld s01e01", coda_filename="SSF_SLD_s01e01")]
 
 
 def get_demog_coding_plans(pipeline_name):
