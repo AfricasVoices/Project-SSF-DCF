@@ -27,76 +27,42 @@ def clean_district_if_no_mogadishu_sub_district(text):
         return Codes.NOT_CODED
 
 
+def make_rqa_coding_plan(episode_name, code_scheme, ws_match_value, coda_filename):
+    return CodingPlan(dataset_name=episode_name.replace("rqa_", ""),
+                      raw_field=f"{episode_name}_raw",
+                      time_field="sent_on",
+                      run_id_field=f"{episode_name}_run_id",
+                      coda_filename=f"{coda_filename}.json",
+                      icr_filename=f"{coda_filename.lower()}.csv",
+                      coding_configurations=[
+                          CodingConfiguration(
+                                coding_mode=CodingModes.MULTIPLE,
+                                code_scheme=code_scheme,
+                                coded_field=f"{episode_name}_coded",
+                                analysis_file_key=f"{episode_name}",
+                                fold_strategy=lambda x, y: FoldStrategies.list_of_labels(code_scheme, x, y)
+                          )],
+                      ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value(ws_match_value),
+                      raw_field_fold_strategy=FoldStrategies.concatenate)
+
+
 def get_rqa_coding_plans(pipeline_name):
-    return [
-        CodingPlan(raw_field="rqa_dcf_s01e01_raw",
-                   time_field="sent_on",
-                   run_id_field="rqa_dcf_s01e01_run_id",
-                   coda_filename="SSF_DCF_s01e01.json",
-                   icr_filename="ssf_dcf_s01e01.csv",
-                   coding_configurations=[
-                       CodingConfiguration(
-                           coding_mode=CodingModes.MULTIPLE,
-                           code_scheme=CodeSchemes.S01E01,
-                           coded_field="rqa_dcf_s01e01_coded",
-                           analysis_file_key="rqa_dcf_s01e01",
-                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.S01E01, x, y)
-                       )
-                   ],
-                   ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value("ssf dcf s01e01"),
-                   raw_field_fold_strategy=FoldStrategies.concatenate),
+    if pipeline_name == "SSF-DCF":
+        return [make_rqa_coding_plan(episode_name="rqa_dcf_s01e01", code_scheme=CodeSchemes.S01E01,
+                                     ws_match_value="ssf dcf s01e01", coda_filename="SSF_DCF_s01e01"),
 
-        CodingPlan(raw_field="rqa_dcf_s01e02_raw",
-                   time_field="sent_on",
-                   run_id_field="rqa_dcf_s01e02_run_id",
-                   coda_filename="SSF_DCF_s01e02.json",
-                   icr_filename="ssf_dcf_s01e02.csv",
-                   coding_configurations=[
-                       CodingConfiguration(
-                           coding_mode=CodingModes.MULTIPLE,
-                           code_scheme=CodeSchemes.S01E02,
-                           coded_field="rqa_dcf_s01e02_coded",
-                           analysis_file_key="rqa_dcf_s01e02",
-                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.S01E02, x, y)
-                       )
-                   ],
-                   ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value("ssf dcf s01e02"),
-                   raw_field_fold_strategy=FoldStrategies.concatenate),
+                make_rqa_coding_plan(episode_name="rqa_dcf_s01e02", code_scheme=CodeSchemes.S01E02,
+                                     ws_match_value="ssf dcf s01e02", coda_filename="SSF_DCF_s01e02"),
 
-        CodingPlan(raw_field="rqa_dcf_s01e03_raw",
-                   time_field="sent_on",
-                   run_id_field="rqa_dcf_s01e03_run_id",
-                   coda_filename="SSF_DCF_s01e03.json",
-                   icr_filename="ssf_dcf_s01e03.csv",
-                   coding_configurations=[
-                       CodingConfiguration(
-                           coding_mode=CodingModes.MULTIPLE,
-                           code_scheme=CodeSchemes.S01E03,
-                           coded_field="rqa_dcf_s01e03_coded",
-                           analysis_file_key="rqa_dcf_s01e03",
-                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.S01E03, x, y)
-                       )
-                   ],
-                   ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value("ssf dcf s01e03"),
-                   raw_field_fold_strategy=FoldStrategies.concatenate),
+                make_rqa_coding_plan(episode_name="rqa_dcf_s01e03", code_scheme=CodeSchemes.S01E03,
+                                     ws_match_value="ssf dcf s01e03", coda_filename="SSF_DCF_s01e03"),
 
-        CodingPlan(raw_field="rqa_dcf_s01e04_raw",
-                   time_field="sent_on",
-                   run_id_field="rqa_dcf_s01e04_run_id",
-                   coda_filename="SSF_DCF_s01e04.json",
-                   icr_filename="ssf_dcf_s01e04.csv",
-                   coding_configurations=[
-                       CodingConfiguration(
-                           coding_mode=CodingModes.MULTIPLE,
-                           code_scheme=CodeSchemes.S01E04,
-                           coded_field="rqa_dcf_s01e04_coded",
-                           analysis_file_key="rqa_dcf_s01e04",
-                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.S01E04, x, y)
-                       )
-                   ],
-                   ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value("ssf dcf s01e04"),
-                   raw_field_fold_strategy=FoldStrategies.concatenate),
-    ]
+                make_rqa_coding_plan(episode_name="rqa_dcf_s01e04", code_scheme=CodeSchemes.S01E04,
+                                     ws_match_value="ssf dcf s01e04", coda_filename="SSF_DCF_s01e04")]
+    else:
+        assert pipeline_name == "SSF-SLD"
+        return [make_rqa_coding_plan(episode_name="rqa_sld_s01e01", code_scheme=CodeSchemes.SLD_S01E01,
+                                     ws_match_value="ssf sld s01e01", coda_filename="SSF_SLD_s01e01")]
 
 
 def get_demog_coding_plans(pipeline_name):
