@@ -166,10 +166,14 @@ def fetch_from_recovery_csv(user, google_cloud_credentials_file_path, raw_data_d
         traced_runs = []
         for i, row in enumerate(raw_data):
             raw_date = row["ReceivedOn"]
-            if len(raw_date) == len("dd/mm/YYYY HH:MM"):
-                parsed_raw_date = datetime.strptime(raw_date, "%d/%m/%Y %H:%M")
+            for date_format in ["%d/%m/%Y %H:%M", "%d/%m/%Y %H:%M:%S", "%Y/%m/%d %H:%M:%S.%f", "%Y/%m/%d %H:%M:%S"]:
+                try:
+                    parsed_raw_date = datetime.strptime(raw_date, date_format)
+                    break
+                except ValueError:
+                    pass
             else:
-                parsed_raw_date = datetime.strptime(raw_date, "%d/%m/%Y %H:%M:%S")
+                raise ValueError(f"Could not parse date {raw_date}")
             localized_date = pytz.timezone("Africa/Mogadishu").localize(parsed_raw_date)
 
             assert row["Sender"].startswith("avf-phone-uuid-"), \
