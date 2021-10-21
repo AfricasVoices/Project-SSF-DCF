@@ -23,7 +23,8 @@
       "TokenFileURL": "gs://avf-credentials/SSF_DCF-SLD-Textit-Token.txt",
       "ContactsFileName": "ssf_sld_contacts",
       "ActivationFlowNames": [
-        "ssf_sld_s01e01_activation"
+        "ssf_sld_s01e01_activation",
+        "ssf_sld_s01e02_activation"
       ],
       "SurveyFlowNames": [
         "ssf_sld_demog"
@@ -59,6 +60,10 @@
     {"SourceKey": "Rqa_Sld_S01E01 (Text) - ssf_sld_s01e01_activation", "PipelineKey": "rqa_sld_s01e01_raw", "IsActivationMessage": true},
     {"SourceKey": "Rqa_Sld_S01E01 (Run ID) - ssf_sld_s01e01_activation", "PipelineKey": "rqa_sld_s01e01_run_id"},
     {"SourceKey": "Rqa_Sld_S01E01 (Time) - ssf_sld_s01e01_activation", "PipelineKey": "sent_on"},
+
+    {"SourceKey": "Rqa_Sld_S01E02 (Text) - ssf_sld_s01e02_activation", "PipelineKey": "rqa_sld_s01e02_raw", "IsActivationMessage": true},
+    {"SourceKey": "Rqa_Sld_S01E02 (Run ID) - ssf_sld_s01e02_activation", "PipelineKey": "rqa_sld_s01e02_run_id"},
+    {"SourceKey": "Rqa_Sld_S01E02 (Time) - ssf_sld_s01e02_activation", "PipelineKey": "sent_on"},
 
     {"SourceKey": "Gender (Value) - imaqal_demog", "PipelineKey": "gender_raw"},
     {"SourceKey": "Gender (Time) - imaqal_demog", "PipelineKey": "gender_time"},

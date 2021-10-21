@@ -1,64 +1,8 @@
 {
-    "SchemeID": "Scheme-4bdcb6a1",
-    "Name": "SLD RQA S01E01",
+    "SchemeID": "Scheme-cb19908e",
+    "Name": "SLD RQA S01E02",
     "Version": "0.0.0.1",
     "Codes": [
-      {
-        "CodeID": "code-411970fa",
-        "CodeType": "Normal",
-        "DisplayText": "maintain security",
-        "NumericValue": 1,
-        "StringValue": "maintain_security",
-        "VisibleInCoda": true
-      },
-      {
-        "CodeID": "code-ca43c235",
-        "CodeType": "Normal",
-        "DisplayText": "cooperation",
-        "NumericValue": 2,
-        "StringValue": "cooperation",
-        "VisibleInCoda": true
-      },
-      {
-        "CodeID": "code-4c17e69a",
-        "CodeType": "Normal",
-        "DisplayText": "good leadership",
-        "NumericValue": 3,
-        "StringValue": "good_leadership",
-        "VisibleInCoda": true
-      },
-      {
-        "CodeID": "code-711a923c",
-        "CodeType": "Normal",
-        "DisplayText": "promote district council",
-        "NumericValue": 4,
-        "StringValue": "promote_district_council",
-        "VisibleInCoda": true
-      },
-      {
-        "CodeID": "code-b4654b0a",
-        "CodeType": "Normal",
-        "DisplayText": "uphold justice",
-        "NumericValue": 5,
-        "StringValue": "uphold_justice",
-        "VisibleInCoda": true
-      },
-      {
-        "CodeID": "code-6e97b727",
-        "CodeType": "Normal",
-        "DisplayText": "community solidarity",
-        "NumericValue": 6,
-        "StringValue": "community_solidarity",
-        "VisibleInCoda": true
-      },
-      {
-        "CodeID": "code-c3f090bc",
-        "CodeType": "Normal",
-        "DisplayText": "other theme",
-        "NumericValue": 7,
-        "StringValue": "other_theme",
-        "VisibleInCoda": true
-      },
       {
         "CodeID": "code-NA-f93d3eb7",
         "CodeType": "Control",
