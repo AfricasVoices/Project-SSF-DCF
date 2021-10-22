@@ -4,6 +4,62 @@
     "Version": "0.0.0.1",
     "Codes": [
       {
+        "CodeID": "code-b0a8e1fb",
+        "CodeType": "Normal",
+        "DisplayText": "community solidarity",
+        "NumericValue": 1,
+        "StringValue": "community_solidarity",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-51a48093",
+        "CodeType": "Normal",
+        "DisplayText": "cooperation",
+        "NumericValue": 2,
+        "StringValue": "cooperation",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-83ff7dc2",
+        "CodeType": "Normal",
+        "DisplayText": "hold accountable",
+        "NumericValue": 3,
+        "StringValue": "hold_accountable",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-29838869",
+        "CodeType": "Normal",
+        "DisplayText": "no government",
+        "NumericValue": 4,
+        "StringValue": "no_government",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-66683797",
+        "CodeType": "Normal",
+        "DisplayText": "no transparency",
+        "NumericValue": 5,
+        "StringValue": "no_transparency",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-969d9fab",
+        "CodeType": "Normal",
+        "DisplayText": "not possible",
+        "NumericValue": 6,
+        "StringValue": "not_possible",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-e85dfbad",
+        "CodeType": "Normal",
+        "DisplayText": "other theme",
+        "NumericValue": 7,
+        "StringValue": "other_theme",
+        "VisibleInCoda": true
+      },
+      {
         "CodeID": "code-NA-f93d3eb7",
         "CodeType": "Control",
         "ControlCode": "NA",
