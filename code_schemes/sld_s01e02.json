@@ -1,18 +1,18 @@
 {
-    "SchemeID": "Scheme-4bdcb6a1",
-    "Name": "SLD RQA S01E01",
+    "SchemeID": "Scheme-cb19908e",
+    "Name": "SLD RQA S01E02",
     "Version": "0.0.0.1",
     "Codes": [
       {
-        "CodeID": "code-411970fa",
+        "CodeID": "code-b0a8e1fb",
         "CodeType": "Normal",
-        "DisplayText": "maintain security",
+        "DisplayText": "community solidarity",
         "NumericValue": 1,
-        "StringValue": "maintain_security",
+        "StringValue": "community_solidarity",
         "VisibleInCoda": true
       },
       {
-        "CodeID": "code-ca43c235",
+        "CodeID": "code-51a48093",
         "CodeType": "Normal",
         "DisplayText": "cooperation",
         "NumericValue": 2,
@@ -20,39 +20,39 @@
         "VisibleInCoda": true
       },
       {
-        "CodeID": "code-4c17e69a",
+        "CodeID": "code-83ff7dc2",
         "CodeType": "Normal",
-        "DisplayText": "good leadership",
+        "DisplayText": "hold accountable",
         "NumericValue": 3,
-        "StringValue": "good_leadership",
+        "StringValue": "hold_accountable",
         "VisibleInCoda": true
       },
       {
-        "CodeID": "code-711a923c",
+        "CodeID": "code-29838869",
         "CodeType": "Normal",
-        "DisplayText": "promote district council",
+        "DisplayText": "no government",
         "NumericValue": 4,
-        "StringValue": "promote_district_council",
+        "StringValue": "no_government",
         "VisibleInCoda": true
       },
       {
-        "CodeID": "code-b4654b0a",
+        "CodeID": "code-66683797",
         "CodeType": "Normal",
-        "DisplayText": "uphold justice",
+        "DisplayText": "no transparency",
         "NumericValue": 5,
-        "StringValue": "uphold_justice",
+        "StringValue": "no_transparency",
         "VisibleInCoda": true
       },
       {
-        "CodeID": "code-6e97b727",
+        "CodeID": "code-969d9fab",
         "CodeType": "Normal",
-        "DisplayText": "community solidarity",
+        "DisplayText": "not possible",
         "NumericValue": 6,
-        "StringValue": "community_solidarity",
+        "StringValue": "not_possible",
         "VisibleInCoda": true
       },
       {
-        "CodeID": "code-c3f090bc",
+        "CodeID": "code-e85dfbad",
         "CodeType": "Normal",
         "DisplayText": "other theme",
         "NumericValue": 7,
