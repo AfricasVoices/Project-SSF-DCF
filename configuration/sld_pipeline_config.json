@@ -25,7 +25,9 @@
       "ActivationFlowNames": [
         "ssf_sld_s01e01_activation",
         "ssf_sld_s01e02_activation",
-        "ssf_sld_s01e03_activation"
+        "ssf_sld_s01e03_activation",
+        "ssf_sld_s01e04_activation",
+        "ssf_sld_s01e05_activation"
       ],
       "SurveyFlowNames": [
         "ssf_sld_demog"
