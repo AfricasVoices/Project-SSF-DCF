@@ -70,6 +70,14 @@
     {"SourceKey": "Rqa_Sld_S01E03 (Run ID) - ssf_sld_s01e03_activation", "PipelineKey": "rqa_sld_s01e03_run_id"},
     {"SourceKey": "Rqa_Sld_S01E03 (Time) - ssf_sld_s01e03_activation", "PipelineKey": "sent_on"},
 
+    {"SourceKey": "Rqa_Sld_S01E04 (Text) - ssf_sld_s01e04_activation", "PipelineKey": "rqa_sld_s01e04_raw", "IsActivationMessage": true},
+    {"SourceKey": "Rqa_Sld_S01E04 (Run ID) - ssf_sld_s01e04_activation", "PipelineKey": "rqa_sld_s01e04_run_id"},
+    {"SourceKey": "Rqa_Sld_S01E04 (Time) - ssf_sld_s01e04_activation", "PipelineKey": "sent_on"},
+
+    {"SourceKey": "Rqa_Sld_S01E05 (Text) - ssf_sld_s01e05_activation", "PipelineKey": "rqa_sld_s01e05_raw", "IsActivationMessage": true},
+    {"SourceKey": "Rqa_Sld_S01E05 (Run ID) - ssf_sld_s01e05_activation", "PipelineKey": "rqa_sld_s01e05_run_id"},
+    {"SourceKey": "Rqa_Sld_S01E05 (Time) - ssf_sld_s01e05_activation", "PipelineKey": "sent_on"},
+
     {"SourceKey": "Gender (Value) - imaqal_demog", "PipelineKey": "gender_raw"},
     {"SourceKey": "Gender (Time) - imaqal_demog", "PipelineKey": "gender_time"},
     {"SourceKey": "Age (Value) - imaqal_demog", "PipelineKey": "age_raw"},
