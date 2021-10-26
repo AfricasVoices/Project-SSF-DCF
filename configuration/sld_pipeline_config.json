@@ -24,7 +24,10 @@
       "ContactsFileName": "ssf_sld_contacts",
       "ActivationFlowNames": [
         "ssf_sld_s01e01_activation",
-        "ssf_sld_s01e02_activation"
+        "ssf_sld_s01e02_activation",
+        "ssf_sld_s01e03_activation",
+        "ssf_sld_s01e04_activation",
+        "ssf_sld_s01e05_activation"
       ],
       "SurveyFlowNames": [
         "ssf_sld_demog"
@@ -64,6 +67,18 @@
     {"SourceKey": "Rqa_Sld_S01E02 (Text) - ssf_sld_s01e02_activation", "PipelineKey": "rqa_sld_s01e02_raw", "IsActivationMessage": true},
     {"SourceKey": "Rqa_Sld_S01E02 (Run ID) - ssf_sld_s01e02_activation", "PipelineKey": "rqa_sld_s01e02_run_id"},
     {"SourceKey": "Rqa_Sld_S01E02 (Time) - ssf_sld_s01e02_activation", "PipelineKey": "sent_on"},
+
+    {"SourceKey": "Rqa_Sld_S01E03 (Text) - ssf_sld_s01e03_activation", "PipelineKey": "rqa_sld_s01e03_raw", "IsActivationMessage": true},
+    {"SourceKey": "Rqa_Sld_S01E03 (Run ID) - ssf_sld_s01e03_activation", "PipelineKey": "rqa_sld_s01e03_run_id"},
+    {"SourceKey": "Rqa_Sld_S01E03 (Time) - ssf_sld_s01e03_activation", "PipelineKey": "sent_on"},
+
+    {"SourceKey": "Rqa_Sld_S01E04 (Text) - ssf_sld_s01e04_activation", "PipelineKey": "rqa_sld_s01e04_raw", "IsActivationMessage": true},
+    {"SourceKey": "Rqa_Sld_S01E04 (Run ID) - ssf_sld_s01e04_activation", "PipelineKey": "rqa_sld_s01e04_run_id"},
+    {"SourceKey": "Rqa_Sld_S01E04 (Time) - ssf_sld_s01e04_activation", "PipelineKey": "sent_on"},
+
+    {"SourceKey": "Rqa_Sld_S01E05 (Text) - ssf_sld_s01e05_activation", "PipelineKey": "rqa_sld_s01e05_raw", "IsActivationMessage": true},
+    {"SourceKey": "Rqa_Sld_S01E05 (Run ID) - ssf_sld_s01e05_activation", "PipelineKey": "rqa_sld_s01e05_run_id"},
+    {"SourceKey": "Rqa_Sld_S01E05 (Time) - ssf_sld_s01e05_activation", "PipelineKey": "sent_on"},
 
     {"SourceKey": "Gender (Value) - imaqal_demog", "PipelineKey": "gender_raw"},
     {"SourceKey": "Gender (Time) - imaqal_demog", "PipelineKey": "gender_time"},
