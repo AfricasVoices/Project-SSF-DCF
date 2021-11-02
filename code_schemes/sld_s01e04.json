@@ -4,6 +4,70 @@
     "Version": "0.0.0.1",
     "Codes": [
       {
+        "CodeID": "code-6689e2b8",
+        "CodeType": "Normal",
+        "DisplayText": "road construction",
+        "NumericValue": 1,
+        "StringValue": "road_construction",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-2ab887a8",
+        "CodeType": "Normal",
+        "DisplayText": "build hospitals",
+        "NumericValue": 2,
+        "StringValue": "build_hospitals",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-23831964",
+        "CodeType": "Normal",
+        "DisplayText": "protect resources",
+        "NumericValue": 3,
+        "StringValue": "protect_resources",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-4acf6d85",
+        "CodeType": "Normal",
+        "DisplayText": "job creation",
+        "NumericValue": 4,
+        "StringValue": "job_creation",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-d82c8957",
+        "CodeType": "Normal",
+        "DisplayText": "support the needy",
+        "NumericValue": 5,
+        "StringValue": "support_the_needy",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-51f6893c",
+        "CodeType": "Normal",
+        "DisplayText": "build schools",
+        "NumericValue": 6,
+        "StringValue": "build_schools",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-88ca00ea",
+        "CodeType": "Normal",
+        "DisplayText": "general services",
+        "NumericValue": 7,
+        "StringValue": "general_services",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-a19dd5a1",
+        "CodeType": "Normal",
+        "DisplayText": "other theme",
+        "NumericValue": 8,
+        "StringValue": "other_theme",
+        "VisibleInCoda": true
+      },
+      {
         "CodeID": "code-NA-f93d3eb7",
         "CodeType": "Control",
         "ControlCode": "NA",
