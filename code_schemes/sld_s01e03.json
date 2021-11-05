@@ -4,6 +4,62 @@
     "Version": "0.0.0.1",
     "Codes": [
       {
+        "CodeID": "code-79fd9ec6",
+        "CodeType": "Normal",
+        "DisplayText": "law adherence",
+        "NumericValue": 1,
+        "StringValue": "law_adherence",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-35a7e765",
+        "CodeType": "Normal",
+        "DisplayText": "important role",
+        "NumericValue": 2,
+        "StringValue": "important_role",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-6eda7710",
+        "CodeType": "Normal",
+        "DisplayText": "uphold justice",
+        "NumericValue": 3,
+        "StringValue": "uphold_justice",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-1e604b53",
+        "CodeType": "Normal",
+        "DisplayText": "awareness creation",
+        "NumericValue": 4,
+        "StringValue": "awareness_creation",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-fd3478bf",
+        "CodeType": "Normal",
+        "DisplayText": "apply islamic law",
+        "NumericValue": 5,
+        "StringValue": "apply_islamic_law",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-8fb41c7d",
+        "CodeType": "Normal",
+        "DisplayText": "community solidarity",
+        "NumericValue": 6,
+        "StringValue": "community_solidarity",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-9208a635",
+        "CodeType": "Normal",
+        "DisplayText": "other theme",
+        "NumericValue": 7,
+        "StringValue": "other_theme",
+        "VisibleInCoda": true
+      },
+      {
         "CodeID": "code-NA-f93d3eb7",
         "CodeType": "Control",
         "ControlCode": "NA",
