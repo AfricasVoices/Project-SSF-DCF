@@ -149,7 +149,15 @@
 
       {"StartDate": "2021-09-17T08:00+03:00", "EndDate": "2021-09-18T10:00+03:00", "Label": "E02 Promo"},
       {"StartDate": "2021-09-18T10:30+03:00", "EndDate": "2021-09-20T08:00+03:00", "Label": "E02 Ad"},
-      {"StartDate": "2021-09-20T08:00+03:00", "EndDate": "2021-09-20T24:00+03:00", "Label": "E02 Radio"}
+      {"StartDate": "2021-09-20T08:00+03:00", "EndDate": "2021-09-20T24:00+03:00", "Label": "E02 Radio"},
+
+      {"StartDate": "2021-09-24T08:00+03:00", "EndDate": "2021-09-25T16:30+03:00", "Label": "E03 Promo"},
+      {"StartDate": "2021-09-25T16:30+03:00", "EndDate": "2021-09-27T08:00+03:00", "Label": "E03 Ad"},
+      {"StartDate": "2021-09-27T08:00+03:00", "EndDate": "2021-09-27T24:00+03:00", "Label": "E03 Radio"},
+
+      {"StartDate": "2021-10-01T08:00+03:00", "EndDate": "2021-09-02T10:00+03:00", "Label": "E04 Promo"},
+      {"StartDate": "2021-10-02T16:30+03:00", "EndDate": "2021-10-04T08:00+03:00", "Label": "E04 Ad"},
+      {"StartDate": "2021-10-04T08:00+03:00", "EndDate": "2021-10-04T24:00+03:00", "Label": "E04 Radio"}
     ]
   },
   "DriveUpload": {
