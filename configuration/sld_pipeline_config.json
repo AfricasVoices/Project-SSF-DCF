@@ -45,7 +45,9 @@
     },
     {
       "SourceType": "RecoveryCSV",
-      "ActivationFlowURLs": []
+      "ActivationFlowURLs": [
+        "gs://avf-project-datasets/2021/SSF-SLD/2021_SSF-SLD_recovered_hormuud_october_de_identified.csv"
+      ]
     }
   ],
   "UuidTable": {
