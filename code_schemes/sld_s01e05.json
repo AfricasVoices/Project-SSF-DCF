@@ -4,6 +4,46 @@
     "Version": "0.0.0.1",
     "Codes": [
       {
+            "CodeID": "code-f80d3f4b",
+            "CodeType": "Normal",
+            "DisplayText": "yes, they've helped",
+            "NumericValue": 1,
+            "StringValue": "yes_they_have_helped",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-42f75bb0",
+            "CodeType": "Normal",
+            "DisplayText": "yes, no reason",
+            "NumericValue": 2,
+            "StringValue": "yes_no_reason",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-9d8ff30f",
+            "CodeType": "Normal",
+            "DisplayText": "no, islamic teaching is our constitution",
+            "NumericValue": 3,
+            "StringValue": "no_islamic_teaching_is_our_constitution",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-a23b4571",
+            "CodeType": "Normal",
+            "DisplayText": "no, has not helped",
+            "NumericValue": 4,
+            "StringValue": "no_has_not_helped",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-f53d71fb",
+            "CodeType": "Normal",
+            "DisplayText": "no, no reason",
+            "NumericValue": 5,
+            "StringValue": "no_no_reason",
+            "VisibleInCoda": true
+          },
+      {
         "CodeID": "code-NA-f93d3eb7",
         "CodeType": "Control",
         "ControlCode": "NA",
