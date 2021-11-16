@@ -25,6 +25,7 @@ DATASETS=(
     "SSF_SLD_s01e03"
     "SSF_SLD_s01e04"
     "SSF_SLD_s01e05"
+    "SSF_SLD_s01_closeout"
 
     "IMAQAL_gender"
     "IMAQAL_location"
