@@ -20,6 +20,7 @@ class CodeSchemes(object):
     SLD_S01E03 = _open_scheme("sld_s01e03.json")
     SLD_S01E04 = _open_scheme("sld_s01e04.json")
     SLD_S01E05 = _open_scheme("sld_s01e05.json")
+    SLD_S01_CLOSEOUT = _open_scheme("sld_s01_closeout.json")
 
     AGE = _open_scheme("age.json")
     AGE_CATEGORY = _open_scheme("age_category.json")
