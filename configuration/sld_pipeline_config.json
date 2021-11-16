@@ -27,7 +27,8 @@
         "ssf_sld_s01e02_activation",
         "ssf_sld_s01e03_activation",
         "ssf_sld_s01e04_activation",
-        "ssf_sld_s01e05_activation"
+        "ssf_sld_s01e05_activation",
+        "ssf_sld_s01_closeout_activation"
       ],
       "SurveyFlowNames": [
         "ssf_sld_demog"
@@ -106,6 +107,10 @@
     {"SourceKey": "Rqa_Sld_S01E05 (Text) - ssf_sld_s01e05_activation", "PipelineKey": "rqa_sld_s01e05_raw", "IsActivationMessage": true},
     {"SourceKey": "Rqa_Sld_S01E05 (Run ID) - ssf_sld_s01e05_activation", "PipelineKey": "rqa_sld_s01e05_run_id"},
     {"SourceKey": "Rqa_Sld_S01E05 (Time) - ssf_sld_s01e05_activation", "PipelineKey": "sent_on"},
+
+    {"SourceKey": "Rqa_Sld_S01_Closeout (Text) - ssf_sld_s01_closeout_activation", "PipelineKey": "rqa_sld_s01_closeout_raw", "IsActivationMessage": true},
+    {"SourceKey": "Rqa_Sld_S01_Closeout (Run ID) - ssf_sld_s01_closeout_activation", "PipelineKey": "rqa_sld_s01_closeout_run_id"},
+    {"SourceKey": "Rqa_Sld_S01_Closeout (Time) - ssf_sld_s01_closeout_activation", "PipelineKey": "sent_on"},
 
     {"SourceKey": "message", "PipelineKey": "recovered_raw", "IsActivationMessage": true},
     {"SourceKey": "received_on", "PipelineKey": "sent_on"},
