@@ -76,6 +76,30 @@
       "VisibleInCoda": true
     },
     {
+      "CodeID": "code-bb5f301a",
+      "CodeType": "Normal",
+      "DisplayText": "promote the religion",
+      "NumericValue": 10,
+      "StringValue": "promote_the_religion",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4c98844c",
+      "CodeType": "Normal",
+      "DisplayText": "conflict resolutions",
+      "NumericValue": 11,
+      "StringValue": "conflict_resolutions",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4b548247",
+      "CodeType": "Normal",
+      "DisplayText": "environment beautifications and cleanliness",
+      "NumericValue": 12,
+      "StringValue": "environment_beautifications_and_cleanliness",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
