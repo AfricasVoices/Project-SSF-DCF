@@ -74,7 +74,10 @@ def get_rqa_coding_plans(pipeline_name):
                                      ws_match_value="ssf sld s01e04", coda_filename="SSF_SLD_s01e04"),
 
                 make_rqa_coding_plan(episode_name="rqa_sld_s01e05", code_scheme=CodeSchemes.SLD_S01E05,
-                                     ws_match_value="ssf sld s01e05", coda_filename="SSF_SLD_s01e05")]
+                                     ws_match_value="ssf sld s01e05", coda_filename="SSF_SLD_s01e05"),
+
+                make_rqa_coding_plan(episode_name="rqa_sld_s01_closeout", code_scheme=CodeSchemes.SLD_S01_CLOSEOUT,
+                                     ws_match_value="ssf sld s01 closeout", coda_filename="SSF_SLD_s01_closeout")]
 
 
 def get_demog_coding_plans(pipeline_name):
