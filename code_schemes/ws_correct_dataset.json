@@ -114,6 +114,17 @@
             ]
         },
         {
+            "CodeID": "code-4a06d9e6",
+            "CodeType": "Normal",
+            "DisplayText": "ssf sld s01 closeout",
+            "StringValue": "ssf_sld_s01_closeout",
+            "NumericValue": 119,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "ssf sld s01 closeout"
+            ]
+        },
+        {
             "CodeID": "code-1854b761",
             "CodeType": "Normal",
             "DisplayText": "ssf dcf s01e01",
